@@ -13,8 +13,11 @@ export default function ToDoList(){
         setToDoArray(newToDoArray);
     }
 
-    const editTask = id => {
-
+    const editTask = (id,task) => {
+        if(!task.taskName || /^\s*$/.test(task.taskName)){
+            return
+        }
+        setToDoArray(prev => prev.map(item => (item.id === id ? task : item)))
     }
 
     const removeTask = id => {
