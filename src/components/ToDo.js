@@ -23,7 +23,7 @@ export default function ToDo(props){
     }
 
     return props.toDoArray.map((toDoItems, key) => (
-        <div className={toDoItems.isCompleted === true ? "class-completed" : "class-still"} key={key}>
+        <div className={toDoItems.isCompleted === true ? "class-completed class-still" : "class-still"} key={key}>
             <div>
                 {toDoItems.taskName}
             </div>

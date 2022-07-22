@@ -26,6 +26,11 @@ export default function ToDoList(){
     }
 
     const completeToDo = id =>{
+        setToDoArray(prev => prev.map(item => (item.id === id ? {
+            id: item.id,
+            taskName: item.taskName,
+            isCompleted: !item.isCompleted
+        } : item)))
         // let updateToDo = toDoArray.map(task => {
         //     if(task.id === id){
         //         task.isCompleted = !task.isCompleted;
@@ -34,6 +39,8 @@ export default function ToDoList(){
         // });
         // setToDoArray(updateToDo);
     }
+
+    console.log(toDoArray)
 
     return(
         <div className='class-ToDoList'>

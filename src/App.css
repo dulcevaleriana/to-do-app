@@ -84,3 +84,9 @@ html {
 .class-still > div:last-child > svg:last-child{
   color: red;
 }
+
+.class-completed {
+  background: rgb(19,103,138);
+  background: linear-gradient(-45deg, rgba(19,103,138,1) 0%, rgba(171,240,169,1) 33%, rgba(218,253,186,1) 60%, rgba(154,235,163,1) 100%);
+  color:#012030;
+}
