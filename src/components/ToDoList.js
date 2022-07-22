@@ -13,21 +13,35 @@ export default function ToDoList(){
         setToDoArray(newToDoArray);
     }
 
+    const editTask = id => {
+
+    }
+
+    const removeTask = id => {
+        const removeTaskOfArray = [...toDoArray].filter(toDoItems => toDoItems.id !== id);
+        setToDoArray(removeTaskOfArray);
+    }
+
     const completeToDo = id =>{
-        let updateToDo = toDoArray.map(task => {
-            if(task.id === id){
-                task.isCompleted = !task.isCompleted;
-            }
-            return toDoArray;
-        });
-        setToDoArray(updateToDo);
+        // let updateToDo = toDoArray.map(task => {
+        //     if(task.id === id){
+        //         task.isCompleted = !task.isCompleted;
+        //     }
+        //     return toDoArray;
+        // });
+        // setToDoArray(updateToDo);
     }
 
     return(
         <div className='class-ToDoList'>
             <h1>To Do List</h1>
             <ToDoForm onSubmit={addToDoArray}/>
-            <ToDo toDoArray={toDoArray} completeToDo={completeToDo}/>
+            <ToDo 
+                toDoArray={toDoArray} 
+                completeToDo={completeToDo}
+                editTask={editTask}
+                removeTask={removeTask}
+            />
         </div>
     )
 }

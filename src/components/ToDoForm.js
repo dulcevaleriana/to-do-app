@@ -9,7 +9,7 @@ export default function ToDoForm(props){
         props.onSubmit({
             id: Math.floor(Math.random() * 1000),
             taskName: inputListName,
-            isCompleted:false
+            // isCompleted:false
         });
 
         setInputListName('');
