@@ -16,7 +16,6 @@ export default function ToDoForm(props){
 
     return(
         <form className='class-ToDoForm' onSubmit={handleSubmit}>
-            <h1>To Do List App</h1>
             <input 
                 type='text'
                 placeholder='add your task here'
