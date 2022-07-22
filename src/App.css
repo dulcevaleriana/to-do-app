@@ -45,13 +45,42 @@ html {
   box-shadow: 2px 2px 2px 2px #0002;
   padding-left: 20px;
   color: #a0eda5;
-  font-size: 14pt;
+  font-size: 20pt;
+  font-family: monospace;
 }
 
 .class-toDo-App > div > form > button {
   background: #a4eea6;
   color: #012030;
-  font-size: 14pt;
+  font-size: 20pt;
   box-shadow: 2px 2px 2px 2px #0002;
   border: none;
+  font-family: monospace;
+}
+
+.class-still {
+  background: #13678a;
+  display: grid;
+  grid-template-columns: auto 120px;
+  gap: 20px;
+  height: 60px;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 20pt;
+  color: #a1eda5;
+  font-family: monospace;
+}
+
+.class-still > div:last-child{
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.class-still > div:last-child > svg:first-child > path{
+  stroke: #DAFDBA;
+}
+
+.class-still > div:last-child > svg:last-child{
+  color: red;
 }
