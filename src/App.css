@@ -1,38 +1,92 @@
-.App {
+html {
+  background: rgb(19,103,138);
+  background: linear-gradient(45deg, rgba(19,103,138,1) 0%, rgba(171,240,169,1) 33%, rgba(218,253,186,1) 60%, rgba(154,235,163,1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: monospace;
+}
+
+.class-toDo-App {
+  background: #012030;
+  margin: 0 auto;
+  width: 25vw;
+  height: 70vh;
+  position: relative;
+  top: 15vh;
+  border-radius: 20px;
+  box-shadow: 2px 2px 160px 80px #0530404f;
+}
+
+.class-toDo-App > div{
+  padding: 40px 20px;
+  position: relative;
+  display: grid;
+  gap: 20px;
+}
+
+.class-toDo-App > div > h1 {
+  color: #a0eda5;
   text-align: center;
+  font-size: 30pt;
+  margin: 0;
+  border-bottom: 1px solid #13678a;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.class-toDo-App > div > form {
+  display: grid;
+  grid-template-columns: auto 120px;
+  height: 60px;
+  gap: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.class-toDo-App > div > form > input {
+  background: #13678a63;
+  border: none;
+  box-shadow: 2px 2px 2px 2px #0002;
+  padding-left: 20px;
+  color: #a0eda5;
+  font-size: 20pt;
+  font-family: monospace;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.class-toDo-App > div > form > button {
+  background: #a4eea6;
+  color: #012030;
+  font-size: 20pt;
+  box-shadow: 2px 2px 2px 2px #0002;
+  border: none;
+  font-family: monospace;
+}
+
+.class-still {
+  background: #13678a;
+  display: grid;
+  grid-template-columns: auto 120px;
+  gap: 20px;
+  height: 60px;
   align-items: center;
+  padding-left: 20px;
+  font-size: 20pt;
+  color: #a1eda5;
+  font-family: monospace;
+}
+
+.class-still > div:last-child{
+  gap: 10px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.class-still > div:last-child > svg:first-child > path{
+  stroke: #DAFDBA;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.class-still > div:last-child > svg:last-child{
+  color: red;
+}
+
+.class-completed {
+  background: rgb(19,103,138);
+  background: linear-gradient(-45deg, rgba(19,103,138,1) 0%, rgba(171,240,169,1) 33%, rgba(218,253,186,1) 60%, rgba(154,235,163,1) 100%);
+  color:#012030;
 }
