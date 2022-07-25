@@ -31,13 +31,6 @@ export default function ToDoList(){
             taskName: item.taskName,
             isCompleted: !item.isCompleted
         } : item)))
-        // let updateToDo = toDoArray.map(task => {
-        //     if(task.id === id){
-        //         task.isCompleted = !task.isCompleted;
-        //     }
-        //     return toDoArray;
-        // });
-        // setToDoArray(updateToDo);
     }
 
     console.log(toDoArray)
